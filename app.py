@@ -64,8 +64,9 @@ def main():
                for Tumor Detection.  This application aims to provide prior\
                diagnosis for the existence of a tumor in a given brain MRI\
                image.')
-    image = st.file_uploader(
-        "Please upload your Brain MRI Image", type=["png", "jpg", "jpeg"], accept_multiple_files=False)
+    with st.sidebar:
+        image = st.file_uploader(
+            "Please upload your Brain MRI Image", type=["png", "jpg", "jpeg"], accept_multiple_files=False)
     show_description = st.checkbox("Show model description")
     describe_model(show_description)
     if image is not None:
