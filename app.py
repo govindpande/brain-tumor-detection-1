@@ -59,6 +59,7 @@ model.compile(loss = 'binary_crossentropy',
 def main():
     st.set_page_config(page_title="Brain Tumor Detection", page_icon="🧠")
     st.title("Brain Tumor Detection")
+    st.image("""https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2013/06/mri_brain_scan2/12915441-1-eng-GB/MRI_brain_scan_pillars.gif""")
     st.caption('A predictive Deep Learning Model trained on MRI images of Brain\
                for Tumor Detection.  This application aims to provide prior\
                diagnosis for the existence of a tumor in a given brain MRI\
